@@ -21,8 +21,9 @@ $controller = new $controllerName();
 
 // Asegurar que el método esté definido en el controlador
 $dataToView["data"] = array();
-if (method_exists($controller, $_GET["action"]))
+if (method_exists($controller, $_GET["action"])) {
   $dataToView["data"] = $controller->{$_GET["action"]}();
+}
 
 
 // Llamar vistas
