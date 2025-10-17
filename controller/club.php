@@ -1,5 +1,4 @@
 <?php
-
 require_once 'model/club.php';
 
 class clubController
@@ -20,7 +19,5 @@ class clubController
 	{
 		return $this->clubObj->getCategoriasConJugadores();
 	}
-
 }
-
 ?>

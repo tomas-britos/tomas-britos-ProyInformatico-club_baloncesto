@@ -17,8 +17,6 @@ class Club
 		$this->conection = $dbObj->conection;
 	}
 
-
-
 	// Traer todas las categorias con sus jugadores
 	public function getCategoriasConJugadores()
 	{
@@ -41,5 +39,4 @@ class Club
 		return $categorias;
 	}
 }
-
 ?>
