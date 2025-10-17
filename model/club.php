@@ -17,20 +17,10 @@ class Club
 		$this->conection = $dbObj->conection;
 	}
 
-	// Traer todos los items
-	public function getItems()
-	{
-		$this->getConection();
-		$sql = "SELECT * FROM " . $this->table;
-		$stmt = $this->conection->prepare($sql);
-		$stmt->execute();
-		$resultado = $stmt->get_result();
 
-		return $resultado->fetch_all(MYSQLI_ASSOC);
-	}
 
-	// Traer todos los items con sus jugadores
-	public function getItemsWithPlayers()
+	// Traer todas las categorias con sus jugadores
+	public function getCategoriasConJugadores()
 	{
 		$this->getConection();
 		$sql = "SELECT * FROM " . $this->table;

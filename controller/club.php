@@ -15,10 +15,10 @@ class clubController
 		$this->clubObj = new Club();
 	}
 
-	// Traer todos los items
+	// Traer todos los jugadores
 	public function list()
 	{
-		return $this->clubObj->getItemsWithPlayers();
+		return $this->clubObj->getCategoriasConJugadores();
 	}
 
 }
