@@ -19,7 +19,7 @@ require_once $controller_path;
 $controllerName = $_GET["controller"] . 'Controller';
 $controller = new $controllerName();
 
-// Asegurar que el método esté definido en el controlador
+// Asegurar que el método esté definido en controlador
 $dataToView["data"] = array();
 if (method_exists($controller, $_GET["action"])) {
   $dataToView["data"] = $controller->{$_GET["action"]}();
